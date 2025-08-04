@@ -1,4 +1,4 @@
-#WEATHER OUTFIT RECOMMENDER
+# WEATHER OUTFIT RECOMMENDER
 
 A simple web application that recommends an outfit based on real-time weather data using a machine learning model. Built using **Flask**, **TailwindCSS**, and **scikit-learn**.
 
