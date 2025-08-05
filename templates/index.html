@@ -21,13 +21,21 @@
                 class="bg-white text-black px-6 py-2 rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
             Predict Outfit  
         </button>
+        <div id ="loader" class="hidden mt-6 flex justify-center">
+            <div class="w-10 h-10 border-4 border-t-transparent border-black rounded-full animate-spin"></div>
+        </div>
         <div id="result" class="mt-6 text-lg text-gray-800"></div>
     </div>
     <script>
-        function getLocationAndRecommend() {
+        async function getLocationAndRecommend() {
+            const loader = document.getElementById("loader");
+            const result=document.getElementById("result");
+
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(
                     async (position) => {
+                        loader.classList.remove("hidden");
+                        result.innerText = "Fetching weather data...";
                         const latitude = position.coords.latitude;
                         const longitude = position.coords.longitude;
 
@@ -61,9 +69,12 @@
                         } catch (error) {
                             document.getElementById("result").innerText = 
                                 `Error fetching weather data: ${error.message}`;
+                        }finally {
+                            loader.classList.add("hidden");
                         }
                     },
                     (error) => {
+                        loader.classList.add("hidden");
                         document.getElementById("result").innerText = 
                             "Location access denied or unavailable";
                     }
