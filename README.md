@@ -28,7 +28,7 @@ A simple web application that recommends an outfit based on real-time weather da
 ##  How It Works
 
 1. The user clicks the **"Predict Outfit"** button.
-2. The browser fetches weather data from Open-Meteo(using geolocation data that it fetches via HTML5 Geolocation API).
+2. The browser fetches weather data from Open-Meteo, using geolocation data that it fetches via HTML5 Geolocation API
 3. A POST request is sent to the Flask backend with:
    - Temperature
    - Humidity
@@ -40,7 +40,7 @@ A simple web application that recommends an outfit based on real-time weather da
 
 ---
 
-### ✅ Prerequisites
+###  Prerequisites
 
 Make sure you have:
 
