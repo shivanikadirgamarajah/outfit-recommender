@@ -56,8 +56,8 @@
 });
                             const prediction = await response1.json();
                             
-                            document.getElementById("result").innerText=
-                                `Recommended Outfit: ${prediction.recommended_outfit}`;
+                            document.getElementById("result").innerHTML =
+                                `Recommended Outfit: <span class="text-red-600 font-semibold">${prediction.recommended_outfit}</span>`;
                         } catch (error) {
                             document.getElementById("result").innerText = 
                                 `Error fetching weather data: ${error.message}`;
