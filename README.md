@@ -7,7 +7,7 @@ A simple web application that recommends an outfit based on real-time weather da
 
 ## Preview
 
-<img alt="Screenshot 1" src="screenshot.png" width="100%" style="transform: rotate(-90deg);" />
+<img alt="Screenshot 1" src="screenshot.png" width="100%" />
 
 <img alt="Screenshot 2" src="screenshottwo.png" width="100%" />
 
