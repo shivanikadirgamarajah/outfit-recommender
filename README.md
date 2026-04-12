@@ -7,8 +7,9 @@ A simple web application that recommends an outfit based on real-time weather da
 
 ## Preview
 
+<img alt="Screenshot 1" src="screenshot.png" width="100%" />
 
-<img width="1896" height="912" alt="image" src="https://github.com/user-attachments/assets/67d611e4-81d8-4e6c-8636-ce3e78aeeba3" />
+<img alt="Screenshot 2" src="screenshottwo.png" width="100%" />
 
 
 
