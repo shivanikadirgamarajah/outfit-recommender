@@ -62,7 +62,7 @@ If using Git:
 
 ```bash
 git clone https://github.com/shivanikadirgamarajah/outfit-recommender.git
-cd weather-outfit-predictor
+cd outfit-recommender
 ```
 
 ---
