@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,25 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
         .glass-effect {
             background: white;
             border: none;
         }
+
         .weather-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .weather-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 min-h-screen flex flex-col items-center justify-center p-4">
+
+<body
+    class="bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 min-h-screen flex flex-col items-center justify-center p-4">
     <div class="w-full max-w-2xl">
         <!-- Header -->
         <div class="text-center mb-12">
@@ -34,30 +40,35 @@
         <!-- Main Card -->
         <div class="glass-effect w-full p-8 rounded-3xl shadow-2xl">
             <!-- Description -->
-            <p class="text-center text-gray-700 mb-8 text-lg">Allow location access to analyze your current weather and get personalized outfit recommendations</p>
+            <p class="text-center text-gray-700 mb-8 text-lg">Allow location access to analyze your current weather and
+                get personalized outfit recommendations</p>
 
             <!-- Weather Data Display -->
             <div id="weatherContainer" class="hidden mb-8">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    <div class="weather-card bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-4 text-white text-center">
+                    <div
+                        class="weather-card bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-4 text-white text-center">
                         <div class="text-3xl mb-2">🌡️</div>
                         <p class="text-sm text-orange-100">Temperature</p>
                         <p class="text-2xl font-bold" id="tempValue">-</p>
                         <p class="text-xs text-orange-100">°C</p>
                     </div>
-                    <div class="weather-card bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl p-4 text-white text-center">
+                    <div
+                        class="weather-card bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl p-4 text-white text-center">
                         <div class="text-3xl mb-2">💧</div>
                         <p class="text-sm text-blue-100">Humidity</p>
                         <p class="text-2xl font-bold" id="humidValue">-</p>
                         <p class="text-xs text-blue-100">%</p>
                     </div>
-                    <div class="weather-card bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl p-4 text-white text-center">
+                    <div
+                        class="weather-card bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl p-4 text-white text-center">
                         <div class="text-3xl mb-2">💨</div>
                         <p class="text-sm text-cyan-100">Wind Speed</p>
                         <p class="text-2xl font-bold" id="windValue">-</p>
                         <p class="text-xs text-cyan-100">km/h</p>
                     </div>
-                    <div class="weather-card bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl p-4 text-white text-center">
+                    <div
+                        class="weather-card bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl p-4 text-white text-center">
                         <div class="text-3xl mb-2">🌧️</div>
                         <p class="text-sm text-purple-100">Precipitation</p>
                         <p class="text-2xl font-bold" id="precipValue">-</p>
@@ -68,15 +79,18 @@
 
             <!-- Button -->
             <button onclick="getLocationAndRecommend()" id="predictButton"
-                    class="w-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-105 mb-8">
+                class="w-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-105 mb-8">
                 Get Outfit Recommendation
             </button>
 
             <!-- Loader -->
             <div id="loader" class="hidden mt-6 flex justify-center mb-8">
                 <div class="relative w-12 h-12">
-                    <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 rounded-full animate-spin" style="clip-path: polygon(50% 50%, 50% 0%, 100% 0%);"></div>
-                    <div class="absolute inset-1 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 rounded-full"></div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 rounded-full animate-spin"
+                        style="clip-path: polygon(50% 50%, 50% 0%, 100% 0%);"></div>
+                    <div
+                        class="absolute inset-1 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 rounded-full">
+                    </div>
                 </div>
             </div>
 
@@ -86,7 +100,8 @@
             </div>
 
             <!-- Outfit Recommendation -->
-            <div id="outfitResult" class="hidden mt-8 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-2xl p-6 text-center">
+            <div id="outfitResult"
+                class="hidden mt-8 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-2xl p-6 text-center">
                 <p class="text-gray-700 text-sm font-semibold mb-2">YOUR RECOMMENDED OUTFIT</p>
                 <p class="text-3xl md:text-4xl font-bold text-gray-900 break-words" id="outfitText">-</p>
             </div>
@@ -113,15 +128,25 @@
                         const longitude = position.coords.longitude;
 
                         try {
-                            const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=relative_humidity_2m,precipitation`);
+
+                            const response = await fetch(
+                                `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation&timezone=auto`
+                            );
+
+                            if (!response.ok) {
+                                throw new Error("Unable to fetch weather data");
+                            }
+
                             const data = await response.json();
-                            
+
                             const weatherData = {
-                                temperature: data.current_weather.temperature,
-                                humidity: data.hourly.relative_humidity_2m[0],
-                                wind_speed: data.current_weather.windspeed,
-                                precipitation: data.hourly.precipitation[0]
+                                temperature: data.current.temperature_2m,
+                                humidity: data.current.relative_humidity_2m,
+                                wind_speed: data.current.wind_speed_10m,
+                                precipitation: data.current.precipitation
                             };
+
+                            console.log("Weather observation time:", data.current.time);
 
                             // Display weather data
                             document.getElementById("tempValue").innerText = Math.round(weatherData.temperature);
@@ -140,7 +165,7 @@
                             });
 
                             const prediction = await response1.json();
-                            
+
                             result.innerHTML = "";
                             outfitResult.classList.remove("hidden");
                             document.getElementById("outfitText").innerText = prediction.recommended_outfit;
@@ -165,5 +190,5 @@
         }
     </script>
 </body>
+
 </html>
-            
