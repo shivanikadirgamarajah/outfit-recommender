@@ -59,19 +59,20 @@ If using Git:
 ```bash
 git clone https://github.com/yourusername/weather-outfit-predictor.git
 cd weather-outfit-predictor
-````
+python -m pip install -r requirements.txt
+```
 ---
 
 ### 2. Train the model
 
 ```bash
 python train_model.py
-````
+```
 ---
 ### 3. Start the flask server
 
 ```bash
-python main.py
+python app.py
 ```
 
 ---
