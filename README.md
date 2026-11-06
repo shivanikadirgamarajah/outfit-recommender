@@ -4,7 +4,11 @@ A simple web application that recommends an outfit based on real-time weather da
 
 
 ---
+## Live Demo
 
+[Try the Weather Outfit Recommender](https://outfit-recommender-phi.vercel.app/)
+
+---
 ## Preview
 
 <img alt="Screenshot 1" src="screenshot.png" width="100%" />
@@ -52,24 +56,32 @@ Make sure you have:
 
 ---
 
-### 1. Clone or Download the Repository
+Clone or Download the Repository
 
 If using Git:
 
 ```bash
-git clone https://github.com/yourusername/weather-outfit-predictor.git
+git clone https://github.com/shivanikadirgamarajah/outfit-recommender.git
 cd weather-outfit-predictor
-python -m pip install -r requirements.txt
 ```
----
 
-### 2. Train the model
+---
+### Create a virtual enviornment
 
 ```bash
-python train_model.py
+python3 -m venv .venv
+source .venv/bin/activate
 ```
+
 ---
-### 3. Start the flask server
+### Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+---
+### Run the application
 
 ```bash
 python app.py
