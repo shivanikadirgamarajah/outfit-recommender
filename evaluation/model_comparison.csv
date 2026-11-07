@@ -1,0 +1,4 @@
+model,accuracy,macro_f1,macro_recall
+Temperature baseline,0.3182,0.1568,0.3
+Logistic Regression,0.3636,0.1815,0.2778
+Random Forest,0.4545,0.2983,0.3725
