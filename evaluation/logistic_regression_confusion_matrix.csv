@@ -1,0 +1,24 @@
+,Heavy coat and boots,Heavy jacket and boots,"Heavy jacket, scarf, and boots","Heavy winter coat, scarf, and boots","Heavy winter coat, scarf, gloves, and boots","Heavy winter coat, scarf, gloves, beanie, and boots","Heavy winter coat, thermal layers, gloves, beanie, and boots",Hoodie and jeans,"Hoodie, joggers, and sneakers","Insulated jacket, thermal top, and jeans",Jacket and long pants,Light jacket wear,Light sweater wear,"Long-sleeve shirt, chinos, and sneakers",Moderate casual wear,Moderate jacket wear,"Polo shirt, chinos, and loafers","Puffer jacket, thermal layers, gloves, beanie","Puffer jacket, thermal layers, gloves, beanie, and heavy winter boots","Short-sleeve shirt, jeans, and sneakers","T-shirt, shorts, and sandals","T-shirt, shorts, and sneakers","Waterproof jacket, umbrella, and boots"
+Heavy coat and boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Heavy jacket and boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Heavy jacket, scarf, and boots",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+"Heavy winter coat, scarf, and boots",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Heavy winter coat, scarf, gloves, and boots",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Heavy winter coat, scarf, gloves, beanie, and boots",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"Heavy winter coat, thermal layers, gloves, beanie, and boots",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hoodie and jeans,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Hoodie, joggers, and sneakers",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Insulated jacket, thermal top, and jeans",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jacket and long pants,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Light jacket wear,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Light sweater wear,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Long-sleeve shirt, chinos, and sneakers",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0
+Moderate casual wear,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Moderate jacket wear,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Polo shirt, chinos, and loafers",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Puffer jacket, thermal layers, gloves, beanie",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"Puffer jacket, thermal layers, gloves, beanie, and heavy winter boots",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Short-sleeve shirt, jeans, and sneakers",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0
+"T-shirt, shorts, and sandals",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0
+"T-shirt, shorts, and sneakers",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Waterproof jacket, umbrella, and boots",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
